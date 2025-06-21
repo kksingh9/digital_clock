@@ -1,6 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import Accordion from './accordion';
+import CountDownTimer from './countDown/CountDownTimer';
+import NestedComments from './Comments/nestedComments';
+import Debouncing from './Debouncing/debouncing';
+import ThrottledScroll from './Throttle/Throttle';
+import Pagination from './pagination/pagination';
 
 function App() {
   const items = [
@@ -24,6 +29,11 @@ function App() {
   return (
     <div className="">
      <Accordion items={items}/>
+     <CountDownTimer />
+     {/* <NestedComments />
+     <Debouncing />
+     <ThrottledScroll /> */}
+     <Pagination />
     </div>
     
   );
